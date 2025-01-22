@@ -1,0 +1,83 @@
+# Dependencias de Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Archivos de compilación
+dist/
+build/
+.out/
+.next/
+.nuxt/
+.vscode/
+
+# Archivos de logs
+logs/
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de entornos y configuraciones sensibles
+.env
+.env.*.local
+!.env.example
+
+# Archivos de pruebas y coverage
+jest.config.js
+coverage/
+.nyc_output/
+
+# Archivos temporales de procesos
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Archivos de caché
+.cache/
+.eslintcache
+.parcel-cache/
+.next/cache/
+.npm/
+yarn-error.log
+.pnp
+.pnp.js
+.pnp.cjs
+
+# Archivos de configuración de editores
+.idea/
+.vscode/
+*.sublime-workspace
+
+# Archivos de Docker (si usas Docker)
+docker-compose.override.yml
+docker-compose.dev.yml
+docker-compose.test.yml
+
+# Archivos específicos de TypeScript
+*.tsbuildinfo
+
+# Archivos de debugging
+*.swp
+*.swo
+
+# Archivos específicos de PM2
+pm2.log
+pm2.pid
+pm2.out.log
+pm2.err.log
+
+# Archivos de lock de instalación global (opcional)
+.npmrc
+.yarnrc
