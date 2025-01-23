@@ -7,6 +7,7 @@
     "strict": true, // Activa el modo estricto, lo que mejora la seguridad del código, obligando a ser más explícitos con el tipado
     "noImplicitAny": true, // Nos obliga a definir los tipos correctamente y si nos olvidamos de definir el tipo de una variable, TypeScript nos avisará
     "forceConsistentCasingInFileNames": true, // Evita errores en sistemas de archivos que distinguen entre mayúsculas y minúsculas (por ejemplo, User.ts vs. user.ts).
-    "skipLibCheck": true // Evita que TypeScript analice archivos del tipo .d.ts de bibliotecas externas, lo que acelera la compilación.
+    "skipLibCheck": true, // Evita que TypeScript analice archivos del tipo .d.ts de bibliotecas externas, lo que acelera la compilación.
+    "esModuleInterop": true
   }
 }

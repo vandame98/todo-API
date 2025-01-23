@@ -1,0 +1,17 @@
+paths:
+  /test:
+    get:
+      summary: Tetsing route
+      tags:
+        - Test
+      responses:
+        '200':
+          description: Successfull response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: '¡It works!!!'
