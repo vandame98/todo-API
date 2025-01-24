@@ -1,15 +1,17 @@
-import swaggerJsdoc from 'swagger-jsdoc';
-import swaggerUi from 'swagger-ui-express';
-import { Express } from 'express';
 import path from 'path';
-
-const options: swaggerJsdoc.Options = {
+import swaggerJSDoc from 'swagger-jsdoc';
+import { Express } from 'express';
+import swaggerUi from 'swagger-ui-express';
+const options = {
   apis: [path.join(__dirname, '../../docs/swagger/**/*.yml')],
 };
 
-const swaggerSpec = swaggerJsdoc(options);
+const swaggerSpec = swaggerJSDoc(options);
 
-
+/**
+ * Configuración de Swagger
+ * @param {Express} app - Instancia de la aplicación Express
+ */
 export function setupSwagger(app: Express) {
   app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 }

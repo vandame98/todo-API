@@ -34,7 +34,6 @@ Thumbs.db
 !.env.example
 
 # Archivos de pruebas y coverage
-jest.config.js
 coverage/
 .nyc_output/
 
