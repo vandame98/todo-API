@@ -2,11 +2,12 @@ import dotenv from 'dotenv';
 import Joi from 'joi';
 import path from 'path';
 import fs from 'fs';
+import { logger } from './winston';
 
 // Check if the .env file exists before loading it
 const envPath = path.resolve(__dirname, '../../.env');
 if (!fs.existsSync(envPath)) {
-  console.warn('.env file not found. Using system environment variables.');
+  logger.warn('.env file not found. Using system environment variables.');
 } else {
   dotenv.config({ path: envPath });
 }
@@ -53,6 +54,6 @@ const envVars = {
 };
 
 if (envVars.NODE_ENV === 'development') {
-  console.log('Environment variables successfully loaded from .env');
+  logger.info('Environment variables successfully loaded from .env');
 }
 export default envVars;
