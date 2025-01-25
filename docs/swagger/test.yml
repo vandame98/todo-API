@@ -1,7 +1,7 @@
 paths:
   /test:
     get:
-      summary: Tetsing route
+      summary: Testing route
       tags:
         - Test
       responses:
@@ -14,4 +14,4 @@ paths:
                 properties:
                   message:
                     type: string
-                    example: '¡It works!!!'
+                    example: 'This is an example response'
