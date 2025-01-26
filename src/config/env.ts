@@ -45,11 +45,11 @@ const envVars = {
   NODE_ENV: value.NODE_ENV,
   PORT: Number(value.PORT),
   DB: {
-    HOST: value.MYSQL_HOST,
+    HOST: value.MYSQL_HOST!,
     PORT: Number(value.MYSQL_PORT),
-    USER: value.MYSQL_USER,
-    PASSWORD: value.MYSQL_PASSWORD,
-    NAME: value.MYSQL_DB_NAME,
+    USER: value.MYSQL_USER!,
+    PASSWORD: value.MYSQL_PASSWORD!,
+    DB_NAME: value.MYSQL_DB_NAME!,
   },
 };
 
