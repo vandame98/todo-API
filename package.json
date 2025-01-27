@@ -7,7 +7,11 @@
     "release": "standard-version",
     "test": "jest --detectOpenHandles",
     "prepare": "husky",
-    "dev": "nodemon -r dotenv/config src/index.ts"
+    "dev": "nodemon -r dotenv/config src/index.ts",
+    "typeorm": "typeorm-ts-node-commonjs",
+    "typeorm:run": "npm run typeorm migration:run -- -d src/config/database.ts",
+    "typeorm:status": "npm run typeorm -- migration:show -d src/config/database.ts",
+    "typeorm:revert": "npm run typeorm migration:revert -- -d src/config/database.ts"
   },
   "lint-staged": {
     "*.{js, jsx,ts,tsx}": [

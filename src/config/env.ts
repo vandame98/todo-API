@@ -52,8 +52,4 @@ const envVars = {
     DB_NAME: value.MYSQL_DB_NAME!,
   },
 };
-
-if (envVars.NODE_ENV === 'development') {
-  logger.info('Environment variables successfully loaded from .env');
-}
 export default envVars;
